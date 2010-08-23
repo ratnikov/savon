@@ -11,6 +11,7 @@ class Object
     to_datetime.to_soap_value
   end
 
-  alias_method :to_soap_value!, :to_soap_value
-
+  def to_soap_value!
+    to_soap_value
+  end
 end
